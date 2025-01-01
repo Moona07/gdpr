@@ -54,11 +54,11 @@ body {
 
 .Light blue background {
   background-image: url('C:\Users\mamun\Downloads\pexels-markusspiske-1089438.jpg');
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  padding: 50px; /* Adjusts spacing (optional) */
-  color: white; /* Text color (optional for contrast) */
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 50px; 
+  color: white;
 }
 
 .hero h1 {
