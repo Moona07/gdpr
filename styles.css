@@ -47,18 +47,13 @@ body {
 /* Hero Section */
 .hero {
   background-image: url("https://raw.githubusercontent.com/Moona07/gdpr/refs/heads/main/pexels-markusspiske-1089438.jpg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   text-align: center;
-  color: white; 
+  color: white;  /* Ensure all text inside .hero is white */
   padding: 100px 20px;
   margin-top: -1px;
-}
-
-  background-size: cover;
-  background-repeat: no-repeat; 
-
 }
 
 .hero h1 {
@@ -68,7 +63,7 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: white;  /* Make sure paragraph text is also white */
 }
 
 /* Posts */
