@@ -17,6 +17,7 @@ body {
   background: #333;
   color: #fff;
   padding: 1rem 0;
+  position: relative;
 }
 
 .navbar .logo {
@@ -25,12 +26,14 @@ body {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .navbar .nav-links {
   list-style: none;
-  float: right;
   margin: 0;
+  padding: 0;
+  float: right;
 }
 
 .navbar .nav-links li {
@@ -44,6 +47,21 @@ body {
   font-size: 1rem;
 }
 
+/* Mobile Hamburger Menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+}
+
 /* Hero Section */
 .hero {
   background-image: url("https://raw.githubusercontent.com/Moona07/gdpr/refs/heads/main/pexels-markusspiske-1089438.jpg");
@@ -51,7 +69,7 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: white;  /* Ensure all text inside .hero is white */
+  color: white;
   padding: 100px 20px;
   margin-top: -1px;
 }
@@ -63,7 +81,7 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  color: white;  /* Make sure paragraph text is also white */
+  color: white;
 }
 
 /* Posts */
@@ -97,11 +115,33 @@ body {
     float: none; /* Stack the navigation links */
     text-align: center; /* Center the links */
     margin-top: 10px;
+    display: none; /* Hide menu on smaller screens */
+    width: 100%; /* Make navbar full width */
+    position: absolute;
+    top: 60px; /* Position it below the navbar */
+    left: 0;
+    background-color: #333; /* Make background same as navbar */
   }
 
   .navbar .nav-links li {
     display: block; /* Stack navbar links vertically */
     margin: 10px 0; /* Add some space between links */
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu */
+  }
+
+  /* Toggle Menu (Show when clicked) */
+  #nav-links.active {
+    display: block; /* Show the menu when active */
+  }
+
+  .navbar .nav-links a {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
   }
 
   .hero {
@@ -139,7 +179,7 @@ body {
 
   .navbar .nav-links li {
     display: block;
-    margin: 5px 0; /* Adjust margin for mobile */
+    margin: 5px 0;
   }
 
   .hero {
