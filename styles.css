@@ -46,20 +46,18 @@ body {
 
 /* Hero Section */
 .hero {
-  background: lightblue; /* Light blue background */
+  background image: url("https://Background Image")
+  background-size: cover;
+  background-repeat: no-repeat; 
   text-align: center;
+  text colour: white 
   padding: 100px 20px;
   margin-top: -1px;
 }
 
-.Light blue background {
-  background-image: url('img src=https://github.com/Moona07/gdpr/blob/main/Background%20Image);
-  alt="Background Image"
   background-size: cover;
-  background-position: center; 
   background-repeat: no-repeat; 
-  padding: 50px; 
-  color: white;
+
 }
 
 .hero h1 {
