@@ -84,3 +84,81 @@ body {
 .post p {
   margin: 10px 0;
 }
+
+/* Responsive Design */
+
+/* For tablets (portrait) and mobile phones */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .navbar .nav-links {
+    float: none; /* Stack the navigation links */
+    text-align: center; /* Center the links */
+    margin-top: 10px;
+  }
+
+  .navbar .nav-links li {
+    display: block; /* Stack navbar links vertically */
+    margin: 10px 0; /* Add some space between links */
+  }
+
+  .hero {
+    padding: 80px 20px; /* Adjust hero padding for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Adjust font size for h1 */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Adjust font size for paragraphs */
+  }
+
+  .post h2 {
+    font-size: 1.4rem; /* Adjust post title size */
+  }
+
+  .post p {
+    font-size: 1rem; /* Adjust post paragraph size */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .navbar .nav-links {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-links li {
+    display: block;
+    margin: 5px 0; /* Adjust margin for mobile */
+  }
+
+  .hero {
+    padding: 60px 10px; /* Adjust hero padding for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Adjust font size for h1 */
+  }
+
+  .hero p {
+    font-size: 0.9rem; /* Adjust font size for paragraphs */
+  }
+
+  .post h2 {
+    font-size: 1.2rem; /* Adjust post title size */
+  }
+
+  .post p {
+    font-size: 0.9rem; /* Adjust post paragraph size */
+  }
+}
