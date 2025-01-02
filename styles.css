@@ -46,10 +46,10 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: url("https://github.com/Moona07/gdpr/blob/main/pexels-markusspiske-1089438.jpg");
+  background-image: url("https://github.com/Moona07/gdpr/blob/main/pexels-markusspiske-1089438.jpg?raw=true");
   background-repeat: no-repeat; 
   text-align: center;
-  text colour: white 
+  colour: white; 
   padding: 100px 20px;
   margin-top: -1px;
 }
