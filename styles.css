@@ -48,8 +48,10 @@ body {
 .hero {
   background-image: url("https://raw.githubusercontent.com/Moona07/gdpr/refs/heads/main/pexels-markusspiske-1089438.jpg");
   background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: centre 
   text-align: center;
-  colour: white; 
+  color: white; 
   padding: 100px 20px;
   margin-top: -1px;
 }
