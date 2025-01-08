@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - GDPR - Posts </title>
+  <title>GDPR</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // JavaScript to load the navigation bar
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the navbar:', error));
+    });
+  </script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">GDPR</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="posts.html">Posts</a></li>
-         <li><a href="notes.html">Notes</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Placeholder for the navigation bar -->
+  <div id="navbar-placeholder"></div>
 
   <header class="hero">
     <div class="hero-text">
